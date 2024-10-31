@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowGuide - Personalized Skincare</title>
+    <link rel="stylesheet" href="skintype.css">
+</head>
+<body>
+    <header>
+        <h1>GlowGuide</h1>
+        <p>Your Personalized Skincare Expert</p>
+    </header>
+
+    <section class="skin-quiz">
+        <h2>What's Your Skin Type?</h2>
+        <form id="skinForm">
+            <label for="dryness">Do you experience dryness?</label>
+            <select id="dryness">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <label for="oily">Do you have oily skin?</label>
+            <select id="oily">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <label for="acne">Do you have acne/pimples?</label>
+            <select id="acne">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <label for="sensitivity">Do you have sensitive skin?</label>
+            <select id="sensitivity">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <button type="button" onclick="recommendProducts()">Get Recommendations</button>
+        </form>
+    </section>
+
+    <section id="productRecommendations" class="hidden">
+        <h2>Your Product Recommendations</h2>
+        <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GlowGuide. Your Personalized Skincare Expert.</p>
+    </footer>
+
+    <script src="skintype.js"></script>
+</body>
+</html>
